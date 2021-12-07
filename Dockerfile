@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip canvas.zip
 RUN cp -rvf canvas/* .
 Run rm -rf canvas canvas.zip
-CMD ["usr/sbin/httd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
