@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page273/ca
 WORKDIR /var/www/html
 RUN unzip canvas.zip
 RUN cp -rvf canvas/* .
-Run -rf canvas canvas.zip
+Run rm -rf canvas canvas.zip
 CMD [“echo”,”Image created”] 
 EXPOSE 80
