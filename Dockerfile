@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip canvas.zip
 RUN cp -rvf canvas/* .
 Run rm -rf canvas canvas.zip
-CMD [“echo”,”Image created”] 
+CMD ["usr/sbin/httd", "-D", "FOREGROUND"]
 EXPOSE 80
